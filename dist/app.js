@@ -19697,16 +19697,21 @@ var React = require('react'),
     ReactDOM = require('react-dom');
 
 var app = function app() {
+	var _this = this;
 
 	var Header = React.createClass({
 		displayName: 'Header',
 
 		render: function render() {
-			return React.createElement('h1', null, 'YOLO');
+			return React.createElement('h1', {
+				__self: _this
+			}, 'YOLO');
 		}
 	});
 
-	ReactDOM.render(React.createElement(Header, null), document.querySelector('.container'));
+	ReactDOM.render(React.createElement(Header, {
+		__self: this
+	}), document.querySelector('.container'));
 };
 
 app();
