@@ -19698,15 +19698,80 @@ var React = require('react'),
 
 var app = function app() {
 
+	var AppView = React.createClass({
+		displayName: 'AppView',
+
+		render: function render() {
+			return React.createElement('div', { id: 'MainContainer', __self: this
+			}, React.createElement(Header, {
+				__self: this
+			}), React.createElement(Search, {
+				__self: this
+			}), React.createElement(Article, {
+				__self: this
+			}), React.createElement(FollowBox, {
+				__self: this
+			}));
+		}
+	});
+
 	var Header = React.createClass({
 		displayName: 'Header',
 
 		render: function render() {
-			return React.createElement('h1', null, 'YOLO');
+			return React.createElement('div', { className: 'headerContainer', __self: this
+			}, React.createElement('img', { id: 'headerImg', src: 'http://magentanova.github.io/html-intro-1/images/houston.jpg', __self: this
+			}), React.createElement('img', { id: 'logo1', src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
+			}));
 		}
 	});
 
-	ReactDOM.render(React.createElement(Header, null), document.querySelector('.container'));
+	var Search = React.createClass({
+		displayName: 'Search',
+
+		render: function render() {
+			return React.createElement('div', { className: 'searchColum', __self: this
+			}, React.createElement('p', { id: 'title', __self: this
+			}, 'The Iorn Yard | Houston'), React.createElement('p', { id: 'happenings', __self: this
+			}, 'Happenings and updates from the Iron Yard in Houston'), React.createElement('p', { id: 'input', __self: this
+			}, 'SEARCH'), React.createElement('input', { placeholder: 'Search Keywords', __self: this
+			}));
+		}
+	});
+
+	var Article = React.createClass({
+		displayName: 'Article',
+
+		render: function render() {
+			return React.createElement('div', { className: 'articleColm', __self: this
+			}, React.createElement('p', { id: 'articleTitle', __self: this
+			}, 'September 22 Starts a New Class of The Iron Yard Houston Students'), React.createElement('p', { id: 'author', __self: this
+			}, 'By Brian Dorton, Campus Director at ', React.createElement('a', { herf: 'https://www.theironyard.com', __self: this
+			}, 'The Iron Yard'), ' Houston'), React.createElement('img', { id: 'classRoom', src: 'http://magentanova.github.io/html-intro-1/images/classroom.jpg', __self: this
+			}), React.createElement('p', {
+				__self: this
+			}, ' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'));
+		}
+	});
+
+	var FollowBox = React.createClass({
+		displayName: 'FollowBox',
+
+		render: function render() {
+			return React.createElement('div', { id: 'follow', __self: this
+			}, React.createElement('p', { id: 'never-miss', __self: this
+			}, 'Never miss a post!'), React.createElement('img', { id: 'logo', src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
+			}), React.createElement('p', { id: 'tiyhouston', __self: this
+			}, 'tiyhouston'), React.createElement('p', { id: 'box-text', __self: this
+			}, 'The Iron Yard | Houston'), React.createElement('button', {
+				__self: this
+			}, '+ Follow'));
+		}
+	});
+
+	ReactDOM.render(React.createElement(AppView, {
+		__self: this
+	}), document.querySelector('.container'));
 };
 
 app();
