@@ -19743,7 +19743,7 @@ var app = function app() {
 		displayName: 'Article',
 
 		render: function render() {
-			return React.createElement('div', { className: 'articleColm', __self: this
+			return React.createElement('div', { className: 'articleColum', __self: this
 			}, React.createElement('p', { id: 'articleTitle', __self: this
 			}, 'September 22 Starts a New Class of The Iron Yard Houston Students'), React.createElement('p', { id: 'author', __self: this
 			}, 'By Brian Dorton, Campus Director at ', React.createElement('a', { herf: 'https://www.theironyard.com', __self: this
@@ -19758,7 +19758,7 @@ var app = function app() {
 		displayName: 'FollowBox',
 
 		render: function render() {
-			return React.createElement('div', { id: 'follow', __self: this
+			return React.createElement('div', { className: 'follow', __self: this
 			}, React.createElement('p', { id: 'never-miss', __self: this
 			}, 'Never miss a post!'), React.createElement('img', { id: 'logo', src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
 			}), React.createElement('p', { id: 'tiyhouston', __self: this

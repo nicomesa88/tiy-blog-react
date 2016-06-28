@@ -7,7 +7,7 @@
     width: 100%;
         #headerImg {
             width: 100%;
-            // margin-top: -10%;
+            margin-top: -10%;
         }
         #logo1 {
             width: 8%;
@@ -19,4 +19,117 @@
         }
 }
 
-.searchColum
+.searchColum {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width:18%;
+    left: 21%;
+    padding: 4px;
+    margin-right: 90px;
+        #title {
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        #happenings {
+            color: grey;
+            font-size: 16px;
+            margin-top: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid grey;
+        }
+        input {
+            width: 95%;
+            padding: 6px;
+            line-height: 20px;
+        }
+}
+
+.articleColum {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    right: -20%;
+    padding: 1px;
+        #articleTitle {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            line-height: 40px;
+        }
+        #author {
+            font-style: italic;
+            padding-top: 15px;
+        }
+        img {
+            width: 82%;
+        }
+        p {
+            width: 82%;
+            margin-top: 10px
+        }
+}
+
+.follow {
+    background-color: white;
+    padding: 0;
+    border-radius: 2%;
+    width: 20%;
+    position: fixed;
+    bottom: 5%;
+    right: 1%;
+    font-weight: bold;
+    color: grey;
+    border: 1px solid grey;
+    font-size: 16px;
+    opacity: .6;
+        #never-miss {
+            width: 100%;
+            color: black;
+            padding: 3px;
+            padding-left: 10px;
+            border-bottom: 1px solid grey;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+        img {
+            width: 15%;
+            padding-left: 10px;
+            padding-top: 0;
+            display: inline-block;
+        }
+        #tiyhouston {
+            color: black;
+            padding-left: 10px;
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            padding-bottom: 0;
+          }
+        #box-text {
+            position: relative;
+            font-size: 15px;
+            line-height: 10px;
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 27px;
+            margin-left: -80px;
+        }
+        button {
+            position: relative;
+            vertical-align: top;
+            border: none;
+            border-radius: 5%;
+            background-color: #5495BA;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+}

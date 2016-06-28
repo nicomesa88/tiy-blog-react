@@ -43,7 +43,7 @@ const app = function() {
 	var Article = React.createClass({
 		render: function() {
 			return (
-				<div className="articleColm">
+				<div className="articleColum">
 					<p id="articleTitle">September 22 Starts a New Class of The Iron Yard Houston Students</p>
 					<p id="author">By Brian Dorton, Campus Director at <a herf="https://www.theironyard.com">The Iron Yard</a> Houston</p>
 					<img id="classRoom" src="http://magentanova.github.io/html-intro-1/images/classroom.jpg" />
@@ -68,7 +68,7 @@ const app = function() {
 	var FollowBox = React.createClass({
 		render: function() {
 			return (
-				<div id="follow">
+				<div className="follow">
 					<p id="never-miss">Never miss a post!</p>
 					<img id="logo" src="http://magentanova.github.io/html-intro-1/images/ironyardlogo.png" />
 					<p id="tiyhouston">tiyhouston</p>
